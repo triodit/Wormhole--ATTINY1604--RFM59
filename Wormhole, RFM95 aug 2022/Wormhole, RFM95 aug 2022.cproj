@@ -30,15 +30,15 @@
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.51.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.51.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -69,8 +69,33 @@
   <avrgcc.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
+      <Value>RadioHead-1.121.zip</Value>
+      <Value>RadioHead.h</Value>
+      <Value>RH_RF95.cpp</Value>
+      <Value>RH_RF95.h</Value>
+      <Value>RH_TCP.cpp</Value>
+      <Value>RH_TCP.h</Value>
+      <Value>RHCRC.cpp</Value>
+      <Value>RHCRC.h</Value>
+      <Value>RHDatagram.cpp</Value>
+      <Value>RHDatagram.h</Value>
+      <Value>RHEncryptedDriver.cpp</Value>
+      <Value>RHEncryptedDriver.h</Value>
+      <Value>RHMesh.cpp</Value>
+      <Value>RHMesh.h</Value>
+      <Value>RHReliableDatagram.cpp</Value>
+      <Value>RHReliableDatagram.h</Value>
+      <Value>RHRouter.cpp</Value>
+      <Value>RHRouter.h</Value>
+      <Value>RHTcpProtocol.h</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>Z:\Programing\Libraries</Value>
+      <Value>Z:\Programing\Libraries\RadioHead</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\Atmel\ATtiny_DFP\1.9.337\include\</Value>
@@ -108,8 +133,33 @@
   <avrgcc.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
+      <Value>RadioHead-1.121.zip</Value>
+      <Value>RadioHead.h</Value>
+      <Value>RH_RF95.cpp</Value>
+      <Value>RH_RF95.h</Value>
+      <Value>RH_TCP.cpp</Value>
+      <Value>RH_TCP.h</Value>
+      <Value>RHCRC.cpp</Value>
+      <Value>RHCRC.h</Value>
+      <Value>RHDatagram.cpp</Value>
+      <Value>RHDatagram.h</Value>
+      <Value>RHEncryptedDriver.cpp</Value>
+      <Value>RHEncryptedDriver.h</Value>
+      <Value>RHMesh.cpp</Value>
+      <Value>RHMesh.h</Value>
+      <Value>RHReliableDatagram.cpp</Value>
+      <Value>RHReliableDatagram.h</Value>
+      <Value>RHRouter.cpp</Value>
+      <Value>RHRouter.h</Value>
+      <Value>RHTcpProtocol.h</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>Z:\Programing\Libraries</Value>
+      <Value>Z:\Programing\Libraries\RadioHead</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\Atmel\ATtiny_DFP\1.9.337\include\</Value>
