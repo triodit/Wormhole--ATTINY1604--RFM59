@@ -1,0 +1,39 @@
+﻿------ Build started: Project: ATTINY1604 Lora, Configuration: Debug AVR ------
+Build started.
+Project "ATTINY1604 Lora.cppproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "E:\Program Files (x86)\Atmel\Studio\7.0\Vs\Compiler.targets" from project "C:\Users\sarah\OneDrive\Not Documents\Atmel Studio\7.0\ATTINY1604 Lora\ATTINY1604 Lora\ATTINY1604 Lora.cppproj" (target "Build" depends on it):
+	Using "RunCompilerTask" task from assembly "E:\Program Files (x86)\Atmel\Studio\7.0\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path E:\Program Files (x86)\Atmel\Studio\7.0\shellUtils
+		E:\Program Files (x86)\Atmel\Studio\7.0\shellUtils\make.exe all --jobs 16 --output-sync 
+		Building file: .././main.cpp
+		Invoking: AVR8/GNU C Compiler : 5.4.0
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe" -funsigned-char -funsigned-bitfields -DDEBUG  -I"E:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATtiny_DFP\1.9.337\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=attiny1604 -B "E:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATtiny_DFP\1.9.337\gcc\dev\attiny1604" -c -MD -MP -MF "main.d" -MT"main.d" -MT"main.o"   -o "main.o" ".././main.cpp" 
+		Finished building: .././main.cpp
+		Building target: ATTINY1604 Lora.elf
+		Invoking: AVR8/GNU Linker : 5.4.0
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe" -o "ATTINY1604 Lora.elf"  main.o   -Wl,-Map="ATTINY1604 Lora.map" -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -mmcu=attiny1604 -B "E:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATtiny_DFP\1.9.337\gcc\dev\attiny1604"  
+		Finished building target: ATTINY1604 Lora.elf
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "ATTINY1604 Lora.elf" "ATTINY1604 Lora.hex"
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "ATTINY1604 Lora.elf" "ATTINY1604 Lora.eep" || exit 0
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "ATTINY1604 Lora.elf" > "ATTINY1604 Lora.lss"
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "ATTINY1604 Lora.elf" "ATTINY1604 Lora.srec"
+		"E:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-size.exe" "ATTINY1604 Lora.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		    154	      0	      0	    154	     9a	ATTINY1604 Lora.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "E:\Program Files (x86)\Atmel\Studio\7.0\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	154 bytes   0.9 % Full
+				Data Memory Usage 		:	0 bytes   0.0 % Full
+				Warning: Memory Usage estimation may not be accurate if there are sections other than .text sections in ELF file
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ATTINY1604 Lora.cppproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "E:\Program Files (x86)\Atmel\Studio\7.0\Vs\Avr.common.targets" from project "C:\Users\sarah\OneDrive\Not Documents\Atmel Studio\7.0\ATTINY1604 Lora\ATTINY1604 Lora\ATTINY1604 Lora.cppproj" (entry point):
+Done building target "Build" in project "ATTINY1604 Lora.cppproj".
+Done building project "ATTINY1604 Lora.cppproj".
+
+Build succeeded.
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========
